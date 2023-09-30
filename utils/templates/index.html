@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>template is working </title>
+</head>
+<body>
+	<h2>welcome to the text handler </h2>
+	<form action="/analyzer" method="POST">   {% csrf_token %}
+		 <textarea name='text' style="width: 1794px; height: 328px;"></textarea><br>
+		 <input type="checkbox" name="repunctuations">Remove Punctuations<br>
+		 <input type="checkbox" name="caps">UPPER CASE<br>
+		 <input type="checkbox" name="newlre">New line remover<br>
+		 <input type="checkbox" name="charc">char counter<br>
+
+        <button  type="submit">Analyze Text</button>
+
+
+	</form>
+</body>
+</html>
+
